@@ -1,413 +1,680 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Garten und Landschaftsbau Leon Ternes</title>
-<meta name="description" content="">
-<meta name="author" content="">
+  <meta charset="UTF-8">
+  <title>Gartenbau & Landschaftsbau Leon Ternes Berlin</title>
+	<meta name="description" content="Gartenbau und Landschaftsbau in Berlin und Brandenburg. Wege, Terrassen, Einfahrten, Stellflächen, Treppen und Rampen, Mauern, Zäune, Palisaden, Randeinfassungen, Fundamente, Sonderwünsche">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Open Graph / Social Media -->
+  <meta property="og:title" content="Gartenbau & Landschaftsbau Leon Ternes Berlin">
+  <meta property="og:description" content="Gartenbau und Landschaftsbau in Berlin und Brandenburg. Wege, Terrassen, Einfahrten, Stellflächen, Treppen und Rampen, Mauern, Zäune, Palisaden, Randeinfassungen, Fundamente, Sonderwünsche">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="de_DE">
 
-<!-- Favicons
-    ================================================== -->
-<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
-<link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+  <!-- Keywords for German search engines -->
+  <meta name="keywords" content="Gartenbau und Landschaftsbau in Berlin und Brandenburg. Wege, Terrassen, Einfahrten, Stellflächen, Treppen und Rampen, Mauern, Zäune, Palisaden, Randeinfassungen, Fundamente, Sonderwünsche">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Garten und Landschaftsbau Leon Ternes Berlin">
 
-<!-- Bootstrap -->
-<link rel="stylesheet" type="text/css"  href="css/bootstrap.css">
-<link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
+  <!-- Structured Data JSON-LD for Google -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Garten und Landschaftsbau Leon Ternes Berlin",
+    "description": "Gartenbau und Landschaftsbau Leon Ternes Berlin",
+    "url": "https://www.ternes-gartenbau.de",
+    "telephone": "+49 157 57304789",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Berlin",
+      "addressRegion": "Berlin",
+      "postalCode": "13156",
+      "addressCountry": "DE"
+    },
+    "areaServed": ["Berlin", "Berlin"],
+    "serviceType": ["Gartenbau", "Gartengestaltung", "Landschaftsbau", "Treppen"],
+    "priceRange": "€€"
+  }
+  </script>
 
-<!-- Slider
-    ================================================== -->
-<link href="css/owl.carousel.css" rel="stylesheet" media="screen">
-<link href="css/owl.theme.css" rel="stylesheet" media="screen">
 
-<!-- Stylesheet
-    ================================================== -->
-<link rel="stylesheet" type="text/css" href="css/style.css">
-<link rel="stylesheet" type="text/css" href="css/nivo-lightbox/nivo-lightbox.css">
-<link rel="stylesheet" type="text/css" href="css/nivo-lightbox/default.css">
-<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-<!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.6;
+      color: #163215;
+      background: linear-gradient(180deg, #d9f0d3 0%, #f4f9f2 40%, #e1f2de 100%);
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    header {
+      background: rgba(27, 87, 33, 0.95);
+      color: #f6fff4;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+
+    .header-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0.6rem 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .logo-title {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .logo-circle {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      border: 2px solid #f6fff4;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 1.1rem;
+    }
+
+    .site-title {
+      font-size: 1.1rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      font-size: 0.95rem;
+    }
+
+    nav a {
+      padding: 0.3rem 0.7rem;
+      border-radius: 999px;
+      transition: background 0.2s ease, color 0.2s ease;
+    }
+
+    nav a:hover {
+      background: #f6fff4;
+      color: #1b5721;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 1.5rem 1rem 3rem;
+    }
+
+    section {
+      padding: 2.5rem 0;
+      border-bottom: 1px solid rgba(35, 94, 43, 0.16);
+    }
+
+    section:last-of-type {
+      border-bottom: none;
+    }
+
+    .section-title {
+      font-size: 1.7rem;
+      margin-bottom: 1rem;
+      color: #234f26;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    #start {
+      position: relative;
+      border-radius: 18px;
+      overflow: hidden;
+      margin-top: 1rem;
+    }
+
+    #start::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image: url("images/garten-01.jpg");
+      background-size: cover;
+      background-position: center;
+      filter: brightness(0.75) saturate(1.1);
+      transform: scale(1.02);
+      z-index: -2;
+    }
+
+    #start::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(90deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.25) 45%, rgba(0,0,0,0.4) 100%);
+      z-index: -1;
+    }
+
+    .hero-inner {
+      padding: 2cm;
+    }
+
+    .intro {
+      display: grid;
+      grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+      gap: 2rem;
+      align-items: center;
+      color: #f6fff4;
+    }
+
+    .intro p {
+      margin-bottom: 0.9rem;
+    }
+
+    .pill {
+      display: inline-block;
+      padding: 0.25rem 0.75rem;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.14);
+      color: #f6fff4;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 0.7rem;
+    }
+
+    #start .section-title {
+      color: #f6fff4;
+    }
+
+    .hero-card {
+      background: rgba(255,255,255,0.86);
+      border-radius: 12px;
+      box-shadow: 0 10px 24px rgba(0,0,0,0.25);
+      padding: 1rem;
+      color: #214021;
+    }
+
+    .hero-placeholder {
+      background: linear-gradient(135deg, #93c98f, #cfe8c6);
+      border-radius: 10px;
+      height: 220px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #f6fff4;
+      font-weight: 600;
+      font-size: 1.2rem;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    .two-columns {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 2rem;
+    }
+
+    ul.checklist {
+      list-style: none;
+    }
+
+    ul.checklist li {
+      margin-bottom: 0.5rem;
+      padding-left: 1.4rem;
+      position: relative;
+    }
+
+    ul.checklist li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: #2b7a35;
+      font-weight: 700;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 1rem;
+    }
+
+    .gallery-item {
+      border-radius: 10px;
+      overflow: hidden;
+      background: rgba(255,255,255,0.6);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+      position: relative;
+      cursor: pointer;
+    }
+
+    .gallery-item-inner {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      transform: scale(1.02);
+      transition: transform 0.4s ease, filter 0.4s ease, opacity 0.4s ease;
+      filter: saturate(1.1);
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.07);
+      filter: saturate(1.25);
+    }
+
+    .gallery-caption {
+      padding: 0.6rem 0.8rem 0.7rem;
+      font-size: 0.9rem;
+      color: #27552b;
+      background: rgba(255,255,255,0.92);
+    }
+
+    .lazy {
+      opacity: 0;
+      filter: blur(6px);
+    }
+
+    .lazy.loaded {
+      opacity: 1;
+      filter: blur(0);
+    }
+
+    .contact-box,
+    .impressum-box {
+      background: rgba(255,255,255,0.86);
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 10px 24px rgba(0,0,0,0.15);
+    }
+
+    .contact-line {
+      margin-bottom: 0.4rem;
+    }
+
+    .contact-label {
+      font-weight: 600;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.85rem;
+      color: #234f26;
+      padding: 1.6rem 1rem 2rem;
+      background: rgba(27, 87, 33, 0.12);
+    }
+
+    .lightbox-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.85);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.25s ease;
+    }
+
+    .lightbox-overlay.active {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .lightbox-image-wrapper {
+      max-width: 90vw;
+      max-height: 90vh;
+      position: relative;
+    }
+
+    .lightbox-image-wrapper img {
+      max-width: 100%;
+      max-height: 100%;
+      display: block;
+      border-radius: 8px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    }
+
+    .lightbox-close {
+      position: absolute;
+      top: -2.5rem;
+      right: 0;
+      background: rgba(255,255,255,0.9);
+      border-radius: 999px;
+      border: none;
+      padding: 0.3rem 0.8rem;
+      cursor: pointer;
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
+
+    @media (max-width: 720px) {
+      .header-inner {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      nav ul {
+        justify-content: flex-start;
+      }
+      .hero-inner {
+        padding: 1.5rem;
+      }
+      .intro {
+        grid-template-columns: minmax(0, 1fr);
+      }
+      #start {
+        margin-top: 0.5rem;
+        border-radius: 0;
+      }
+      .hero-placeholder {
+        height: 180px;
+      }
+      .lightbox-image-wrapper {
+        max-width: 96vw;
+        max-height: 80vh;
+      }
+    }
+  </style>
 </head>
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-<!-- Navigation
-    ==========================================-->
-<nav id="menu" class="navbar navbar-default navbar-fixed-top">
-  <div class="container"> 
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-			<!--
-			<a class="navbar-brand page-scroll" href="#page-top">Garten und Landschaftsbau Leon Ternes</a> </div>
-			--> 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#about" class="page-scroll">Über uns</a></li>
-        <li><a href="#portfolio" class="page-scroll">Gallerie</a></li>
-        <li><a href="#contact" class="page-scroll">Impressum/Kontakt</a></li>
+<body>
+
+<header>
+  <div class="header-inner">
+    <div class="logo-title">
+      <div class="logo-circle">LT</div>
+      <div class="site-title">Garten & Landschaftsbau</div>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#start">Start</a></li>
+        <li><a href="#angebot">Angebot</a></li>
+        <li><a href="#galerie">Galerie</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
+        <li><a href="#impressum">Impressum</a></li>
       </ul>
-    </div>
-    <!-- /.navbar-collapse --> 
-  </div>
-  <!-- /.container-fluid --> 
-</nav>
-<!-- Header -->
-<header id="header">
-  <div class="intro">
-    <div class="overlay">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-8 col-md-offset-2 intro-text">
-						<h2 style="color: white;">Garten und Landschaftsbau<br/>Leon Ternes</h2>
-						<p><b>Tel.: 0157 57304789</b></p>
-            <a href="#about" class="btn btn-custom btn-lg page-scroll">Mehr</a> </div>
-        </div>
-      </div>
-    </div>
+    </nav>
   </div>
 </header>
-<!-- About Section -->
-<div id="about">
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12 col-md-6">
-        <div class="about-text">
-					<h2>Willkommen beim <span></br>
-							Garten und Landschaftsbau </br>
-							Leon Ternes</span></h2>
-          <hr>
-          <p>Ich bin seit 2020 gelernter Gärtner im Garten und Landschaftsbau und führe seit 2025 ein kleines Gartenbauunternehmen mit Sitz in Berlin-Pankow.</p>
-<p>
-Meine Leistungen umfassen den Bau von:
-<ul>
-	<li>Wegen</li>
-	<li>Terrassen</li>
-	<li>Einfahrten</li>
-	<li>Stellflächen</li>
-	<li>Treppen und Rampen</li>
-	<li>Mauern</li>
-	<li>Zäunen</li>
-	<li>Palisaden</li>
-	<li>Randeinfassungen</li>
-	<li>Fundamenten</li>
-	<li>und ihren individuellen Sonderwünschen</li>
-</ul>
-</p>
 
-<p>
-Melden Sie sich gerne telefonisch mit ihrem Anliegen für eine unverbindliche Beratung.
-</p
->
+<main>
+  <section id="start">
+    <div class="hero-inner">
+      <div class="intro">
+        <div>
+          <div class="pill">Planung & Ausführung</div>
+					<h1 class="section-title">Garten & Landschaftsbau<br/>Leon Ternes</h1>
+          <p>Willkommen auf meiner Website.</p>
+					<p>Ich bin seit 2020 gelernter Gärtner im Garten- und Landschaftsbau und führe seit 2025 ein kleines Gartenbauunternehmen mit Sitz in Berlin-Pankow.</p>
+					<p>Gerne nehme ich Aufträge im Berliner Stadtgebiet und im nördlichen Berliner Umland an.</p>
+        </div>
+        <div class="hero-card">
+          <div class="hero-placeholder">
+						Melden Sie sich gerne telefonisch mit ihrem Anliegen für eine unverbindliche Beratung.<br/>
+            Tel. 0157 57304789
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-          <p>Mein Wirkungskreis erstreckt sich von Berlin bis ins nördliche Berliner Umland.</p>
-					<!--
-          <a href="#services" class="btn btn-custom btn-lg page-scroll">View All Services</a> 
-					-->
-					</div>
-      </div>
-      <div class="col-xs-12 col-md-3">
-        <div class="about-media"> <img src="img/about-1.jpg" alt=" "> </div>
-        <div class="about-desc">
-          <h3>Vielfältige Bauausführungen</h3>
-          <p>Z.B., Treppen.</p>
-        </div>
-      </div>
-      <div class="col-xs-12 col-md-3">
-        <div class="about-media"> <img src="img/about-2.jpg" alt=" "> </div>
-        <div class="about-desc">
-          <h3>Rund um Ihren Garten und Ihr Grundstück</h3>
-          <p>Z.B., Terrassen.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- Services Section -->
-<div id="services">
-  <div class="container">
-    <div class="col-md-10 col-md-offset-1 section-title text-center">
-      <h2>Bauleistungen</h2>
-      <hr>
-      <p>Eine Auswahl angebotener Bauleistungen.</p>
-    </div>
-    <div class="row">
-      <div class="col-md-3 text-center">
-        <div class="service-media"> <img src="img/services/service-1.jpg" alt=" "> </div>
-        <div class="service-desc">
-          <h3>Terrassen</h3>
-          <p></p>
-        </div>
-      </div>
-      <div class="col-md-3 text-center">
-        <div class="service-media"> <img src="img/services/service-2.jpg" alt=" "> </div>
-        <div class="service-desc">
-          <h3>Einfahrten</h3>
-          <p></p>
-        </div>
-      </div>
-      <div class="col-md-3 text-center">
-        <div class="service-media"> <img src="img/services/service-3.jpg" alt=" "> </div>
-        <div class="service-desc">
-          <h3>Stellflächen</h3>
-          <p></p>
-        </div>
-      </div>
-      <div class="col-md-3 text-center">
-        <div class="service-media"> <img src="img/services/service-4.jpg" alt=" "> </div>
-        <div class="service-desc">
-          <h3>Einfassungen</h3>
-          <p></p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- Gallery Section -->
-<div id="portfolio">
-  <div class="container">
-    <div class="section-title text-center center">
-      <h2>Gallerie</h2>
-      <hr>
-      <p>Eine Auswahl an Baustellen und Bauausführungen in Bildern.</p>
-    </div>
-    <div class="categories">
-			<!--
-      <ul class="cat">
-        <li>
-          <ol class="type">
-            <li><a href="#" data-filter="*" class="active">All</a></li>
-            <li><a href="#" data-filter=".lawn">Rund um Ihren Garten und Ihr Grundstück</a></li>
-            <li><a href="#" data-filter=".garden">Vielfältige Bauausführungen</a></li>
-            <li><a href="#" data-filter=".planting">Planting</a></li>
-          </ol>
-        </li>
-      </ul>
-			-->
-      <div class="clearfix"></div>
-    </div>
-    <div class="row">
-      <div class="portfolio-items">
-        <div class="col-sm-6 col-md-4 lawn">
-          <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/01-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
-              <div class="hover-text">
-                <h4>Wegebau</h4>
-              </div>
-              <img src="img/portfolio/01-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-4 planting">
-          <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/02-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
-              <div class="hover-text">
-                <h4>Wegebau</h4>
-              </div>
-              <img src="img/portfolio/02-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-4 lawn">
-          <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/03-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
-              <div class="hover-text">
-                <h4>Wegebau</h4>
-              </div>
-              <img src="img/portfolio/03-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-4 lawn">
-          <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/04-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
-              <div class="hover-text">
-                <h4>Treppenbau</h4>
-              </div>
-              <img src="img/portfolio/04-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-4 planting">
-          <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/05-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
-              <div class="hover-text">
-                <h4>Treppenbau</h4>
-              </div>
-              <img src="img/portfolio/05-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-4 garden">
-          <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/06-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
-              <div class="hover-text">
-                <h4>Treppenbau</h4>
-              </div>
-              <img src="img/portfolio/06-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-4 garden">
-          <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/07-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
-              <div class="hover-text">
-                <h4>Treppe</h4>
-              </div>
-              <img src="img/portfolio/07-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-4 lawn">
-          <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/08-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
-              <div class="hover-text">
-                <h4>Terrassenbau</h4>
-              </div>
-              <img src="img/portfolio/08-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-4 planting">
-          <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/09-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
-              <div class="hover-text">
-                <h4>Terrassenbau</h4>
-              </div>
-              <img src="img/portfolio/09-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- Testimonials Section -->
-<!--
-<div id="testimonials" class="text-center">
-  <div class="overlay">
-    <div class="container">
-      <div class="section-title">
-        <h2>Testimonials</h2>
-        <hr>
-      </div>
-      <div class="row">
-        <div class="col-md-10 col-md-offset-1">
-          <div id="testimonial" class="owl-carousel owl-theme">
-            <div class="item">
-              <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at duis sed dapibus leo nec ornare diam."</p>
-              <p>- John DOE, Parker County, TX</p>
-            </div>
-            <div class="item">
-              <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at duis sed dapibus leo nec ornare diam."</p>
-              <p>- Jenny DOE, Parker County, TX</p>
-            </div>
-            <div class="item">
-              <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at duis sed dapibus leo nec ornare diam."</p>
-              <p>- John DOE, Parker County, TX</p>
-            </div>
-            <div class="item">
-              <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at duis sed dapibus leo nec ornare diam."</p>
-              <p>- John DOE, Parker County, TX</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
--->
-<!-- Contact Section -->
-<div id="contact" class="text-center">
-  <div class="container">
-    <div class="section-title text-center">
-      <h2>Impressum/Kontakt</h2>
-      <hr>
-      <p></p>
-    </div>
-    <div class="col-md-10 col-md-offset-1 contact-info">
-      <div class="col-md-4">
-        <h3>Impressum</h3>
-        <hr>
-        <div class="contact-item">
-					<p>Garten und Landschaftsbau</p>
-					<p>Leon Ternes</p>
-          <p>Blankenburger Straße 20A</p>
-          <p>13156 Berlin</p>
-        </div>
-      </div>
-      <div class="col-md-4">
-				<!--
-        <h3>Working Hours</h3>
-        <hr>
-        <div class="contact-item">
-          <p>Monday-Saturday: 07:00 - 18:00</p>
-          <p>Sunday: CLOSED</p>
-        </div>
-				-->
-      </div>
-      <div class="col-md-4">
-        <h3>Kontakt</h3>
-        <hr>
-        <div class="contact-item">
-          <p>Telefon: 0157 57304789</p>
-          <p>Email: leon.ternes.info@web.de</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-8 col-md-offset-2">
-			<!--
-      <h3>Leave us a message</h3>
-      <form name="sentMessage" id="contactForm" novalidate>
-        <div class="row">
-          <div class="col-md-6">
-            <div class="form-group">
-              <input type="text" id="name" class="form-control" placeholder="Name" required="required">
-              <p class="help-block text-danger"></p>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="form-group">
-              <input type="email" id="email" class="form-control" placeholder="Email" required="required">
-              <p class="help-block text-danger"></p>
-            </div>
-          </div>
-        </div>
-        <div class="form-group">
-          <textarea name="message" id="message" class="form-control" rows="4" placeholder="Message" required></textarea>
-          <p class="help-block text-danger"></p>
-        </div>
-        <div id="success"></div>
-        <button type="submit" class="btn btn-custom btn-lg">Send Message</button>
-      </form>
-			-->
-    </div>
-  </div>
-</div>
-<!-- Footer Section -->
-<div id="footer">
-  <div class="container text-center">
-    <div class="col-md-8 col-md-offset-2">
-      <div class="social">
-				<!--
-        <ul>
-          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-          <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+  <section id="angebot">
+    <h2 class="section-title">Unser Angebot</h2>
+    <div class="two-columns">
+      <div>
+        <p>Gestalten Sie Ihren Garten und Ihr Grundstück mit zweckmäßigen und harmonisch eingepassten baulichen Elementen.</p>
+        <ul class="checklist">
+          <li>Wege</li>
+          <li>Terrassen</li>
+          <li>Einfahrten</li>
+          <li>Stellflächen</li>
+          <li>Treppen und Rampen</li>
+          <li>Mauer</li>
+          <li>Zäune</li>
+          <li>Palisaden</li>
+          <li>Randeinfassungen</li>
+          <li>Fundamente</li>
+          <li>individuelle Sonderwünsche</li>
         </ul>
+      </div>
+      <div>
+				<!--
+        <p>Diese Beispielseite ist technisch als <strong>Einseiter</strong> umgesetzt: Navigation verlinkt auf Abschnitte derselben HTML-Datei, das Layout bleibt klar und übersichtlich.</p>
+        <p>Die Galerie unten nutzt Lazy Loading mit dem <code>IntersectionObserver</code>, sodass Bilder erst nach und nach geladen werden, wenn sie in den sichtbaren Bereich kommen.</p>
 				-->
       </div>
-      <p>&copy; 2016 Landscaper. Designed by <a href="http://www.templatewire.com" rel="nofollow">TemplateWire</a></p>
     </div>
+  </section>
+
+  <section id="galerie">
+    <h2 class="section-title">Galerie</h2>
+    <p style="margin-bottom:1.3rem;">Bilder von Baustellen und fertigen Bauausführungen</p>
+
+    <div class="gallery-grid">
+      <figure class="gallery-item">
+        <div class="gallery-item-inner">
+          <img class="lazy" data-full="images/garten-01.jpg" data-src="images/garten-01.jpg" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect width='400' height='300' fill='%23d0e7c5'/%3E%3C/svg%3E" alt="Beispiel 1">
+        </div>
+        <figcaption class="gallery-caption">Freitreppe zwischen Gartenplateaus</figcaption>
+      </figure>
+      <figure class="gallery-item">
+        <div class="gallery-item-inner">
+          <img class="lazy" data-full="images/garten-02.jpg" data-src="images/garten-02.jpg" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect width='400' height='300' fill='%23c2ddba'/%3E%3C/svg%3E" alt="Beispiel 2">
+        </div>
+        <figcaption class="gallery-caption">Bau einer Zuwegung</figcaption>
+      </figure>
+      <figure class="gallery-item">
+        <div class="gallery-item-inner">
+          <img class="lazy" data-full="images/garten-03.jpg" data-src="images/garten-03.jpg" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect width='400' height='300' fill='%23b5d3b0'/%3E%3C/svg%3E" alt="Beispiel 3">
+        </div>
+        <figcaption class="gallery-caption">Umgestaltung einer Freifläche</figcaption>
+      </figure>
+      <figure class="gallery-item">
+        <div class="gallery-item-inner">
+          <img class="lazy" data-full="images/garten-04.jpg" data-src="images/garten-04.jpg" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect width='400' height='300' fill='%23a4c89f'/%3E%3C/svg%3E" alt="Beispiel 4">
+        </div>
+        <figcaption class="gallery-caption">Vorbereitung einer Einfassung</figcaption>
+      </figure>
+      <figure class="gallery-item">
+        <div class="gallery-item-inner">
+          <img class="lazy" data-full="images/garten-05.jpg" data-src="images/garten-05.jpg" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect width='400' height='300' fill='%239bbf96'/%3E%3C/svg%3E" alt="Beispiel 5">
+        </div>
+        <figcaption class="gallery-caption">Gartenterasse</figcaption>
+      </figure>
+      <figure class="gallery-item">
+        <div class="gallery-item-inner">
+          <img class="lazy" data-full="images/garten-06.jpg" data-src="images/garten-06.jpg" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect width='400' height='300' fill='%2391b68d'/%3E%3C/svg%3E" alt="Beispiel 6">
+        </div>
+        <figcaption class="gallery-caption">Erdaushub</figcaption>
+      </figure>
+      <figure class="gallery-item">
+        <div class="gallery-item-inner">
+          <img class="lazy" data-full="images/garten-07.jpg" data-src="images/garten-07.jpg" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect width='400' height='300' fill='%2387ad84'/%3E%3C/svg%3E" alt="Beispiel 7">
+        </div>
+        <figcaption class="gallery-caption">Bau einer Treppe</figcaption>
+      </figure>
+      <figure class="gallery-item">
+        <div class="gallery-item-inner">
+          <img class="lazy" data-full="images/garten-08.jpg" data-src="images/garten-08.jpg" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect width='400' height='300' fill='%237ea47c'/%3E%3C/svg%3E" alt="Beispiel 8">
+        </div>
+        <figcaption class="gallery-caption">Bau einer Einfassung</figcaption>
+      </figure>
+      <figure class="gallery-item">
+        <div class="gallery-item-inner">
+          <img class="lazy" data-full="images/garten-09.jpg" data-src="images/garten-09.jpg" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect width='400' height='300' fill='%23749b73'/%3E%3C/svg%3E" alt="Beispiel 9">
+        </div>
+        <figcaption class="gallery-caption">Bau einer Freifläche</figcaption>
+      </figure>
+      <figure class="gallery-item">
+        <div class="gallery-item-inner">
+          <img class="lazy" data-full="images/garten-10.jpg" data-src="images/garten-10.jpg" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect width='400' height='300' fill='%236b926a'/%3E%3C/svg%3E" alt="Beispiel 10">
+        </div>
+        <figcaption class="gallery-caption">Feinarbeiten an einer Freifläche</figcaption>
+      </figure>
+      <figure class="gallery-item">
+        <div class="gallery-item-inner">
+          <img class="lazy" data-full="images/garten-11.jpg" data-src="images/garten-11.jpg" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect width='400' height='300' fill='%23648a64'/%3E%3C/svg%3E" alt="Beispiel 11">
+        </div>
+        <figcaption class="gallery-caption">Kreisrunde Freifläche</figcaption>
+      </figure>
+      <figure class="gallery-item">
+        <div class="gallery-item-inner">
+          <img class="lazy" data-full="images/garten-12.jpg" data-src="images/garten-12.jpg" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect width='400' height='300' fill='%235c825d'/%3E%3C/svg%3E" alt="Beispiel 12">
+        </div>
+        <figcaption class="gallery-caption">Abstellfläche am Carport</figcaption>
+      </figure>
+      <figure class="gallery-item">
+        <div class="gallery-item-inner">
+          <img class="lazy" data-full="images/garten-13.jpg" data-src="images/garten-13.jpg" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect width='400' height='300' fill='%23557956'/%3E%3C/svg%3E" alt="Beispiel 13">
+        </div>
+        <figcaption class="gallery-caption">Abstellfläche</figcaption>
+      </figure>
+      <figure class="gallery-item">
+        <div class="gallery-item-inner">
+          <img class="lazy" data-full="images/garten-14.jpg" data-src="images/garten-14.jpg" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect width='400' height='300' fill='%234d714f'/%3E%3C/svg%3E" alt="Beispiel 14">
+        </div>
+        <figcaption class="gallery-caption">Wegeführung mit Naturstein</figcaption>
+      </figure>
+      <figure class="gallery-item">
+        <div class="gallery-item-inner">
+          <img class="lazy" data-full="images/garten-15.jpg" data-src="images/garten-15.jpg" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect width='400' height='300' fill='%23446948'/%3E%3C/svg%3E" alt="Beispiel 15">
+        </div>
+        <figcaption class="gallery-caption">Sitzplatz mit Blick ins Grüne</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section id="kontakt">
+    <h2 class="section-title">Kontakt</h2>
+    <div class="contact-box">
+			<p class="contact-line"><span class="contact-label">Firma:</span> Garten & Landschaftsbau Leon Ternes</p>
+      <p class="contact-line"><span class="contact-label">Ort:</span> 13156 Berlin </p>
+      <p class="contact-line"><span class="contact-label">Telefon:</span> 0157 57304789</p>
+      <p class="contact-line"><span class="contact-label">E-Mail:</span> leon.ternes.info@web.de</p>
+    </div>
+  </section>
+
+  <section id="impressum">
+    <h2 class="section-title">Impressum</h2>
+    <div class="impressum-box">
+      <p><strong>Angaben gemäß § 5 TMG</strong></p>
+      <p style="margin-top:0.5rem;">
+        Leon Ternes<br>
+        Blankenburger Str. 20A<br>
+        13156 Berlin
+      </p>
+      <p style="margin-top:0.5rem;">
+        Telefon: 0157 57304789<br>
+        E-Mail: leon.ternes.info@web.de
+      </p>
+      <p style="margin-top:0.8rem; font-size:0.9rem;">
+        Verantwortlich für den Inhalt dieser Seite sind die oben genannten Kontaktdaten. 
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  © <span id="year"></span> Garten & Landschaftsbau Leon Ternes
+</footer>
+
+<div class="lightbox-overlay" id="lightbox">
+  <div class="lightbox-image-wrapper">
+    <button class="lightbox-close" type="button" id="lightboxClose">Schließen</button>
+    <img src="" alt="Galerie Bild in voller Größe" id="lightboxImage">
   </div>
 </div>
-<script type="text/javascript" src="js/jquery.1.11.1.js"></script> 
-<script type="text/javascript" src="js/bootstrap.js"></script> 
-<script type="text/javascript" src="js/SmoothScroll.js"></script> 
-<script type="text/javascript" src="js/nivo-lightbox.js"></script> 
-<script type="text/javascript" src="js/jquery.isotope.js"></script> 
-<script type="text/javascript" src="js/owl.carousel.js"></script> 
-<script type="text/javascript" src="js/jqBootstrapValidation.js"></script> 
-<script type="text/javascript" src="js/contact_me.js"></script> 
-<script type="text/javascript" src="js/main.js"></script>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+
+  (function () {
+    var lazyImages = [].slice.call(document.querySelectorAll("img.lazy"));
+    if ("IntersectionObserver" in window) {
+      var observer = new IntersectionObserver(function (entries, obs) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            var img = entry.target;
+            var src = img.getAttribute("data-src");
+            if (src) {
+              img.src = src;
+              img.onload = function () {
+                img.classList.add("loaded");
+              };
+              img.removeAttribute("data-src");
+            }
+            obs.unobserve(img);
+          }
+        });
+      }, { rootMargin: "0px 0px 150px 0px" });
+      lazyImages.forEach(function (img) { observer.observe(img); });
+    } else {
+      lazyImages.forEach(function (img) {
+        var src = img.getAttribute("data-src");
+        if (src) {
+          img.src = src;
+          img.onload = function () { img.classList.add("loaded"); };
+          img.removeAttribute("data-src");
+        }
+      });
+    }
+  })();
+
+  (function () {
+    var lightbox = document.getElementById("lightbox");
+    var lightboxImage = document.getElementById("lightboxImage");
+    var lightboxClose = document.getElementById("lightboxClose");
+
+    document.querySelectorAll(".gallery-item img").forEach(function (img) {
+      img.addEventListener("click", function () {
+        var fullSrc = img.getAttribute("data-full") || img.src;
+        lightboxImage.src = fullSrc;
+        lightbox.classList.add("active");
+      });
+    });
+
+    function closeLightbox() {
+      lightbox.classList.remove("active");
+      lightboxImage.src = "";
+    }
+
+    lightboxClose.addEventListener("click", closeLightbox);
+    lightbox.addEventListener("click", function (e) {
+      if (e.target === lightbox) closeLightbox();
+    });
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape" && lightbox.classList.contains("active")) {
+        closeLightbox();
+      }
+    });
+  })();
+</script>
+
 </body>
 </html>
+

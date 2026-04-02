@@ -6,18 +6,14 @@
 	<link rel="canonical" href="https://haltings.github.io/gartenbau">
 	<meta name="description" content="Gartenbau und Landschaftsbau in Berlin und Brandenburg. Wege, Terrassen, Einfahrten, Stellflächen, Treppen und Rampen, Mauern, Zäune, Palisaden, Randeinfassungen, Fundamente, Sonderwünsche">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!-- Open Graph / Social Media -->
-  <meta property="og:title" content="Gartenbau & Landschaftsbau Leon Ternes Berlin">
+	<meta property="og:title" content="Gartenbau & Landschaftsbau Leon Ternes Berlin">
   <meta property="og:description" content="Gartenbau und Landschaftsbau in Berlin und Brandenburg. Wege, Terrassen, Einfahrten, Stellflächen, Treppen und Rampen, Mauern, Zäune, Palisaden, Randeinfassungen, Fundamente, Sonderwünsche">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="de_DE">
-
-  <!-- Keywords for German search engines -->
   <meta name="keywords" content="Gartenbau und Landschaftsbau in Berlin und Brandenburg. Wege, Terrassen, Einfahrten, Stellflächen, Treppen und Rampen, Mauern, Zäune, Palisaden, Randeinfassungen, Fundamente, Sonderwünsche">
   <meta name="robots" content="index, follow">
   <meta name="author" content="Garten und Landschaftsbau Leon Ternes Berlin">
 
-  <!-- Structured Data JSON-LD for Google -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -39,7 +35,6 @@
   }
   </script>
 
-
   <style>
     *, *::before, *::after {
       box-sizing: border-box;
@@ -54,15 +49,8 @@
       background: linear-gradient(180deg, #d9f0d3 0%, #f4f9f2 40%, #e1f2de 100%);
     }
 
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
-
-    img {
-      max-width: 100%;
-      display: block;
-    }
+    a { color: inherit; text-decoration: none; }
+    img { max-width: 100%; display: block; }
 
     header {
       background: rgba(27, 87, 33, 0.95);
@@ -176,9 +164,7 @@
       z-index: -1;
     }
 
-    .hero-inner {
-      padding: 2cm;
-    }
+    .hero-inner { padding: 2cm; }
 
     .intro {
       display: grid;
@@ -188,9 +174,7 @@
       color: #f6fff4;
     }
 
-    .intro p {
-      margin-bottom: 0.9rem;
-    }
+    .intro p { margin-bottom: 0.9rem; }
 
     .pill {
       display: inline-block;
@@ -204,9 +188,7 @@
       margin-bottom: 0.7rem;
     }
 
-    #start .section-title {
-      color: #f6fff4;
-    }
+    #start .section-title { color: #f6fff4; }
 
     .hero-card {
       background: rgba(255,255,255,0.86);
@@ -217,7 +199,7 @@
     }
 
     .hero-placeholder {
-			background: linear-gradient(135deg, #749f7a, #a2b89f);
+      background: linear-gradient(135deg, #749f7a, #a2b89f);
       border-radius: 10px;
       height: 220px;
       display: flex;
@@ -236,9 +218,7 @@
       gap: 2rem;
     }
 
-    ul.checklist {
-      list-style: none;
-    }
+    ul.checklist { list-style: none; }
 
     ul.checklist li {
       margin-bottom: 0.5rem;
@@ -270,10 +250,7 @@
       cursor: pointer;
     }
 
-    .gallery-item-inner {
-      position: relative;
-      overflow: hidden;
-    }
+    .gallery-item-inner { position: relative; overflow: hidden; }
 
     .gallery-item img {
       width: 100%;
@@ -306,21 +283,15 @@
       filter: blur(0);
     }
 
-    .contact-box,
-    .impressum-box {
+    .contact-box, .impressum-box {
       background: rgba(255,255,255,0.86);
       border-radius: 12px;
       padding: 1.5rem;
       box-shadow: 0 10px 24px rgba(0,0,0,0.15);
     }
 
-    .contact-line {
-      margin-bottom: 0.4rem;
-    }
-
-    .contact-label {
-      font-weight: 600;
-    }
+    .contact-line { margin-bottom: 0.4rem; }
+    .contact-label { font-weight: 600; }
 
     footer {
       text-align: center;
@@ -335,8 +306,10 @@
       inset: 0;
       background: rgba(0,0,0,0.85);
       display: flex;
+      flex-direction: row;
       align-items: center;
       justify-content: center;
+      gap: 2rem;
       z-index: 1000;
       opacity: 0;
       pointer-events: none;
@@ -349,9 +322,12 @@
     }
 
     .lightbox-image-wrapper {
-      max-width: 90vw;
+      max-width: 80vw;
       max-height: 90vh;
       position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
     .lightbox-image-wrapper img {
@@ -373,33 +349,67 @@
       cursor: pointer;
       font-size: 0.9rem;
       font-weight: 600;
+      transition: background 0.2s ease;
+      z-index: 1003;
+    }
+
+    .lightbox-close:hover { background: rgba(255,255,255,1); }
+
+    .lightbox-nav-button {
+      background: rgba(255,255,255,0.85);
+      border: none;
+      border-radius: 50%;
+      width: 80px;
+      height: 80px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 4rem;
+      line-height: 1;
+      font-weight: 300;
+      color: #1b5721;
+      transition: background 0.2s ease, transform 0.2s ease;
+      z-index: 1002;
+      flex-shrink: 0;
+    }
+
+    .lightbox-nav-button:hover:not(:disabled) {
+      background: rgba(255,255,255,1);
+      transform: scale(1.1);
+    }
+
+    .lightbox-nav-button:disabled {
+      opacity: 0.2;
+      cursor: not-allowed;
+    }
+
+    .lightbox-nav-button:disabled:hover { transform: none; }
+
+    .lightbox-counter {
+      position: absolute;
+      bottom: -2.5rem;
+      left: 50%;
+      transform: translateX(-50%);
+      background: rgba(255,255,255,0.9);
+      padding: 0.4rem 0.8rem;
+      border-radius: 999px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: #1b5721;
+      z-index: 1002;
     }
 
     @media (max-width: 720px) {
-      .header-inner {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-      nav ul {
-        justify-content: flex-start;
-      }
-      .hero-inner {
-        padding: 1.5rem;
-      }
-      .intro {
-        grid-template-columns: minmax(0, 1fr);
-      }
-      #start {
-        margin-top: 0.5rem;
-        border-radius: 0;
-      }
-      .hero-placeholder {
-        height: 180px;
-      }
-      .lightbox-image-wrapper {
-        max-width: 96vw;
-        max-height: 80vh;
-      }
+      .header-inner { flex-direction: column; align-items: flex-start; }
+      nav ul { justify-content: flex-start; }
+      .hero-inner { padding: 1.5rem; }
+      .intro { grid-template-columns: minmax(0, 1fr); }
+      #start { margin-top: 0.5rem; border-radius: 0; }
+      .hero-placeholder { height: 180px; }
+      .lightbox-overlay { gap: 1rem; }
+      .lightbox-image-wrapper { max-width: 96vw; max-height: 80vh; }
+      .lightbox-nav-button { width: 60px; height: 60px; font-size: 2.5rem; }
     }
   </style>
 </head>
@@ -429,14 +439,14 @@
       <div class="intro">
         <div>
           <div class="pill">Planung & Ausführung</div>
-					<h1 class="section-title">Garten & Landschaftsbau <br/>Leon Ternes</h1>
+          <h1 class="section-title">Garten & Landschaftsbau <br/>Leon Ternes</h1>
           <p>Willkommen auf meiner Website.</p>
-					<p>Ich bin seit 2020 gelernter Gärtner im Garten- und Landschaftsbau und führe seit 2025 ein kleines Gartenbauunternehmen mit Sitz in Berlin-Pankow.</p>
-					<p>Gerne nehme ich Aufträge im Berliner Stadtgebiet und im nördlichen Berliner Umland an.</p>
+          <p>Ich bin seit 2020 gelernter Gärtner im Garten- und Landschaftsbau und führe seit 2025 ein kleines Gartenbauunternehmen mit Sitz in Berlin-Pankow.</p>
+          <p>Gerne nehme ich Aufträge im Berliner Stadtgebiet und im nördlichen Berliner Umland an.</p>
         </div>
         <div class="hero-card">
           <div class="hero-placeholder">
-						Melden Sie sich gerne telefonisch mit ihrem Anliegen für eine unverbindliche Beratung.<br/>
+            Melden Sie sich gerne telefonisch mit ihrem Anliegen für eine unverbindliche Beratung.<br/>
             Tel. 0157 57304789
           </div>
         </div>
@@ -462,12 +472,6 @@
           <li>Fundamente</li>
           <li>individuelle Sonderwünsche</li>
         </ul>
-      </div>
-      <div>
-				<!--
-        <p>Diese Beispielseite ist technisch als <strong>Einseiter</strong> umgesetzt: Navigation verlinkt auf Abschnitte derselben HTML-Datei, das Layout bleibt klar und übersichtlich.</p>
-        <p>Die Galerie unten nutzt Lazy Loading mit dem <code>IntersectionObserver</code>, sodass Bilder erst nach und nach geladen werden, wenn sie in den sichtbaren Bereich kommen.</p>
-				-->
       </div>
     </div>
   </section>
@@ -565,6 +569,24 @@
         <div class="gallery-item-inner">
           <img class="lazy" data-full="images/garten-15.jpg" data-src="images/garten-15.jpg" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect width='400' height='300' fill='%23446948'/%3E%3C/svg%3E" alt="Beispiel 15">
         </div>
+        <figcaption class="gallery-caption">Stellfläche</figcaption>
+      </figure>
+      <figure class="gallery-item">
+        <div class="gallery-item-inner">
+          <img class="lazy" data-full="images/garten-16.jpg" data-src="images/garten-16.jpg" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect width='400' height='300' fill='%23446948'/%3E%3C/svg%3E" alt="Beispiel 16">
+        </div>
+        <figcaption class="gallery-caption">Stellfläche</figcaption>
+      </figure>
+      <figure class="gallery-item">
+        <div class="gallery-item-inner">
+          <img class="lazy" data-full="images/garten-17.jpg" data-src="images/garten-17.jpg" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect width='400' height='300' fill='%23446948'/%3E%3C/svg%3E" alt="Beispiel 17">
+        </div>
+        <figcaption class="gallery-caption">Stellfläche</figcaption>
+      </figure>
+      <figure class="gallery-item">
+        <div class="gallery-item-inner">
+          <img class="lazy" data-full="images/garten-18.jpg" data-src="images/garten-18.jpg" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect width='400' height='300' fill='%23446948'/%3E%3C/svg%3E" alt="Beispiel 18">
+        </div>
         <figcaption class="gallery-caption">Sitzplatz mit Blick ins Grüne</figcaption>
       </figure>
     </div>
@@ -573,7 +595,7 @@
   <section id="kontakt">
     <h2 class="section-title">Kontakt</h2>
     <div class="contact-box">
-			<p class="contact-line"><span class="contact-label">Firma:</span> Garten & Landschaftsbau Leon Ternes</p>
+      <p class="contact-line"><span class="contact-label">Firma:</span> Garten & Landschaftsbau Leon Ternes</p>
       <p class="contact-line"><span class="contact-label">Ort:</span> 13156 Berlin </p>
       <p class="contact-line"><span class="contact-label">Telefon:</span> 0157 57304789</p>
       <p class="contact-line"><span class="contact-label">E-Mail:</span> leon.ternes.info@web.de</p>
@@ -605,14 +627,22 @@
 </footer>
 
 <div class="lightbox-overlay" id="lightbox">
+  <button class="lightbox-nav-button lightbox-prev" type="button" id="lightboxPrev">&#8249;</button>
   <div class="lightbox-image-wrapper">
     <button class="lightbox-close" type="button" id="lightboxClose">Schließen</button>
     <img src="" alt="Galerie Bild in voller Größe" id="lightboxImage">
+    <div class="lightbox-counter">
+      <span id="lightboxCounter">1 / 18</span>
+    </div>
   </div>
+  <button class="lightbox-nav-button lightbox-next" type="button" id="lightboxNext">&#8250;</button>
 </div>
 
 <script>
   document.getElementById("year").textContent = new Date().getFullYear();
+
+  var galleryImages = [];
+  var currentIndex = 0;
 
   (function () {
     var lazyImages = [].slice.call(document.querySelectorAll("img.lazy"));
@@ -650,13 +680,43 @@
     var lightbox = document.getElementById("lightbox");
     var lightboxImage = document.getElementById("lightboxImage");
     var lightboxClose = document.getElementById("lightboxClose");
+    var lightboxPrev = document.getElementById("lightboxPrev");
+    var lightboxNext = document.getElementById("lightboxNext");
+    var lightboxCounter = document.getElementById("lightboxCounter");
+    
+    galleryImages = [].slice.call(document.querySelectorAll(".gallery-item img"));
 
-    document.querySelectorAll(".gallery-item img").forEach(function (img) {
-      img.addEventListener("click", function () {
+    function updateLightboxImage(index) {
+      if (index >= 0 && index < galleryImages.length) {
+        currentIndex = index;
+        var img = galleryImages[index];
         var fullSrc = img.getAttribute("data-full") || img.src;
         lightboxImage.src = fullSrc;
+        lightboxCounter.textContent = (currentIndex + 1) + " / " + galleryImages.length;
+        lightboxPrev.disabled = currentIndex === 0;
+        lightboxNext.disabled = currentIndex === galleryImages.length - 1;
+      }
+    }
+
+    galleryImages.forEach(function (img, index) {
+      img.addEventListener("click", function () {
+        updateLightboxImage(index);
         lightbox.classList.add("active");
       });
+    });
+
+    lightboxPrev.addEventListener("click", function (e) {
+      e.stopPropagation();
+      if (currentIndex > 0) {
+        updateLightboxImage(currentIndex - 1);
+      }
+    });
+
+    lightboxNext.addEventListener("click", function (e) {
+      e.stopPropagation();
+      if (currentIndex < galleryImages.length - 1) {
+        updateLightboxImage(currentIndex + 1);
+      }
     });
 
     function closeLightbox() {
@@ -668,9 +728,16 @@
     lightbox.addEventListener("click", function (e) {
       if (e.target === lightbox) closeLightbox();
     });
+    
     document.addEventListener("keydown", function (e) {
-      if (e.key === "Escape" && lightbox.classList.contains("active")) {
-        closeLightbox();
+      if (lightbox.classList.contains("active")) {
+        if (e.key === "Escape") {
+          closeLightbox();
+        } else if (e.key === "ArrowLeft" && currentIndex > 0) {
+          updateLightboxImage(currentIndex - 1);
+        } else if (e.key === "ArrowRight" && currentIndex < galleryImages.length - 1) {
+          updateLightboxImage(currentIndex + 1);
+        }
       }
     });
   })();
@@ -678,4 +745,3 @@
 
 </body>
 </html>
-

@@ -190,27 +190,38 @@
 
     #start .section-title { color: #f6fff4; }
 
-    .hero-card {
-      background: rgba(255,255,255,0.86);
-      border-radius: 12px;
-      box-shadow: 0 10px 24px rgba(0,0,0,0.25);
-      padding: 1rem;
-      color: #214021;
-    }
+		.hero-card {
+  background: rgba(255,255,255,0.86);
+  border-radius: 12px;
+  box-shadow: 0 10px 24px rgba(0,0,0,0.25);
+  padding: 1rem;
+  color: #214021;
+  display: flex;
+  flex-direction: column; /* stack image on top of text */
+  align-items: center;
+}
 
-    .hero-placeholder {
-      background: linear-gradient(135deg, #749f7a, #a2b89f);
-      border-radius: 10px;
-      height: 220px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #f6fff4;
-      font-weight: 600;
-      font-size: 1.2rem;
-      text-align: center;
-      padding: 1rem;
-    }
+.hero-image {
+  width: 100%; /* make image full width of card */
+  border-radius: 12px;
+  object-fit: cover; /* maintain aspect ratio */
+  max-height: 200px; /* optional, restrict height */
+  margin-bottom: 1rem; /* spacing between image and text */
+}
+
+.hero-placeholder {
+  background: linear-gradient(135deg, #749f7a, #a2b89f);
+  border-radius: 10px;
+  height: auto; /* remove fixed height to fit text */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #f6fff4;
+  font-weight: 600;
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 1rem;
+}
 
     .two-columns {
       display: grid;
@@ -444,12 +455,15 @@
           <p>Ich bin seit 2020 gelernter Gärtner im Garten- und Landschaftsbau und führe seit 2025 ein kleines Gartenbauunternehmen mit Sitz in Berlin-Pankow.</p>
           <p>Gerne nehme ich Aufträge im Berliner Stadtgebiet und im nördlichen Berliner Umland an.</p>
         </div>
-        <div class="hero-card">
-          <div class="hero-placeholder">
-            Melden Sie sich gerne telefonisch mit ihrem Anliegen für eine unverbindliche Beratung.<br/>
-            Tel. 0157 57304789
-          </div>
-        </div>
+
+	<div class="hero-card">
+  <img src="images/hero-01.jpg" alt="Hero Image" class="hero-image" />
+  <div class="hero-placeholder">
+    Melden Sie sich gerne telefonisch mit ihrem Anliegen für eine unverbindliche Beratung.<br/>
+    Tel. 0157 57304789
+  </div>
+</div>
+
       </div>
     </div>
   </section>
@@ -481,6 +495,13 @@
     <p style="margin-bottom:1.3rem;">Bilder von Baustellen und fertigen Bauausführungen</p>
 
     <div class="gallery-grid">
+
+      <figure class="gallery-item">
+        <div class="gallery-item-inner">
+          <img class="lazy" data-full="images/garten-21.jpg" data-src="images/garten-21.jpg" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect width='400' height='300' fill='%23d0e7c5'/%3E%3C/svg%3E" alt="Beispiel 21">
+        </div>
+        <figcaption class="gallery-caption">Leon Ternes</figcaption>
+      </figure>
 
       <figure class="gallery-item">
         <div class="gallery-item-inner">
